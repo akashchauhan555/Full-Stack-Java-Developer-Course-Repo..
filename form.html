@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Html</title>
+</head>
+<body>
+    <form action="https://www.google.com/search">
+        <label for="myname" style="color:red; font-weight:700; font-size:25px;">Name: </label> <br>
+        <input type="text" id="myname" placeholder="Enter your name" name="name" required> <br>
+        <label for="myemail" style="color:red; font-weight:700; font-size:25px;">Email: </label> <br>
+        <input type="email" id="myemail" placeholder="Enter your email" name="email" required> <br> 
+        <label for="pass" style="color:red; font-weight:700; font-size:25px;">Password: </label> <br>
+        <input type="password" id="pass" placeholder="Enter password" name="password" required> <br>
+        <label for="mynumber" style="color:red; font-weight:700; font-size:25px;">Contact: </label> <br>
+        <input type="tel" id="mynumber" placeholder="Enter your contact number" required> <br> <br>
+
+        <label for="gender">Gender:  </label> 
+        <label for="male">Male</label> <input type="radio" id="male" name="gender" checked>
+        <label for="female">Female</label> <input type="radio" id="female" name="gender" > <br> <br>
+
+        <label for="select">Select Your Course: </label> <br>
+        <input type="checkbox" id="java"> <label for="java" name="select">Java</label> <br>
+        <input type="checkbox" id="python"> <label for="python" name="select">Python</label> <br>
+        <input type="checkbox" id="c++"> <label for="c++" name="select">C++</label> <br>
+        <input type="checkbox" id="css"> <label for="">CSS</label> <br> <br>
+
+        <label for="">Select Your City: </label> <br>
+        <select name="mycity" id="city">
+            <option value="">None</option>
+            <option value="">Lucknow</option>
+            <option value="">Gorakhpur</option>
+            <option value="">Kanpur</option>
+            <option value="">Agra</option>
+        </select> <br> <br>
+
+        <input type="reset"> <br> <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
