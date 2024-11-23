@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Different effect using position property</title>
+    <style>
+        /* *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        } */
+        body{
+            height: 600vh;
+        }
+        .container{
+            height: 280px;
+            width: 350px;
+            border: 1px solid black;
+            margin: 40px auto;
+        }
+        .box{
+            height: 70px;
+            width: 70px;
+        }
+        .purple{
+            background-color: purple;
+               position: relative;
+               top: 20px;
+               left: 30px;
+        }
+        .yellow{
+            background-color: yellow;
+            position: absolute;
+            top: 30px;
+            left: 90px;
+        }
+        .green{
+            background-color: green;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+        }
+        .red{
+            background-color: red;
+        }
+
+        /* New example start from here to explain the remaining part of the position */
+        .parent{
+            height: 1000px;
+            width: 600px;
+            background-color: aqua;
+            margin: 50px auto;
+        }
+        .child{
+            height: 100px;
+            width: 200px;
+            background-color: coral;
+            position: sticky;
+            top: 300px;
+        }
+        .subchild{
+            height: 50px;
+            width: 50px;
+            background-color: crimson;
+            position: absolute;
+            /* position: relative; */
+            top: 20px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box purple"></div>
+        <div class="box yellow"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            <div class="subchild">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#btn{
+    height: 30px;
+    width: 90px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-transform: capitalize;
+}
+#btn:hover{
+    height: 70px;
+    width: 130px;
+    background-color: aquamarine;
+    color: red;
+}
+
+#box{
+    height: 200px;
+    width: 400px;
+    background-color: bisque;
+    margin: auto;
+    border-radius: 10px;
+}
+#box:hover{
+    height: 400px;
+    width: 800px;
+    background-color: brown;
+    margin: auto;
+    border-radius: 900px;
+}
+
+#male:checked + label{   /*for all male to be changed we use ~ this sign */
+    /* This is called the Sibling selector in which the heirarchy work from top to bottom only and for direct child we use + sign and for all indirect child we ~ this sign */
+    color: green;
+    font-size: 40px;
+    font-weight: 600px;
+}
+/* From here Pseudo Elememts starts there are mainly five pseudo elements are 1.first-letter 2.first-line 3.selection 4.after 5.before*/
+#fpara::first-letter{
+    color: yellow;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#secpara::first-line{
+    background-color: navajowhite;
+    color: hotpink;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#secpara::selection{
+    background-color: chartreuse;
+    color: white;     
+   /* font-size: 500px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif; These does not work in selection.*/
+}

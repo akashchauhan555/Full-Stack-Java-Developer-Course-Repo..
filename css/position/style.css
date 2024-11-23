@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.parents{
+    height: 600px;
+    width: 600px;
+    margin: 20px auto;
+    background-color: bisque;
+}
+.child{
+    height: 400px;
+    width: 400px;
+    background-color: aquaa;
+}

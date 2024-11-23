@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating different polygon using clip-path property of css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: yellow;
+            height: 150px;
+            width: 500px;
+            margin: 50px auto;
+            clip-path: polygon(0% 0%, 100% 0%, 75% 50%, 100% 100%, 0% 100%, 25% 50%);
+        }
+
+        .box3{
+            background-color: aquamarine;
+            height: 150px;
+            width: 600px;
+            margin: auto;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%);
+        }
+        .box4{
+            background-color: chartreuse;
+            height: 180px;
+            width: 550px;
+            margin:50px auto;
+            clip-path: polygon(30% 0%, 30% 40%, 100% 40%, 80% 50%, 100% 60%, 30% 60%, 30% 100%, 0% 50%);
+        }
+        .box5{
+            background-color: blanchedalmond;
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>
